@@ -1,0 +1,264 @@
+.whole, .half, .third, .third-x2, .quarter, .quarter-x3, .sixth, .twelveth{
+    float:left;
+    padding:0;
+    margin: 0 2% 0 0;
+}
+
+.last { margin-right:0;
+    padding-right: 0 !important;}
+
+.whole { width: 100%; }
+
+.half { width: 49%; }
+
+.third { width: 32%; } .third-x2 { width: 64%; }
+
+.quarter { width: 23.5%; } .quarter-x3 { width: 74.2% }
+
+.sixth { width: 15%; } .sixth-x5 { width: 83%; }
+
+.twelveth { width: 5.4%; }
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.top-buffer { margin-top:20px; }
+.bottom-buffer { margin-bottom:20px; }
+
+.show_btn{
+    margin-top: 0 !important;
+}
+
+body {
+    font-family: 'Lato';
+    background-color: #e6e6e6;
+    height: 100%;
+}
+
+.glyphicon.glyphicon-question-sign , #help{
+    font-size: 25px;
+    color: #E7DFDD;
+}
+
+.form-control.login{
+    border-radius: 30px 30px 30px 30px;
+    background-color: #E7DFDD;
+}
+
+.form-horizontal .checkbox{
+    padding-top: 0 !important;
+}
+
+
+table, th{
+    text-align: center;
+}
+
+#euthOptions{
+    padding-top: 60px;
+}
+
+footer{
+    background-color: #373737;
+    color: #ffffff;
+    font-weight: bold;
+    text-align:center;
+    height: 35px;
+    padding-top: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+button{
+    border-radius: 50%;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left_btn{
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.fa-btn {
+    margin-right: 6px;
+}
+
+#report{
+    color: red;
+}
+
+#nav{
+    background-color: #373737;
+}
+
+#nav a{
+    font-weight: bold;
+    font-size: 17px;
+    /*color: whitesmoke;*/
+    color: #ffffff;
+}
+
+#nav a:hover{
+    color: #b0e0e6;
+}
+
+#create_cage{
+    padding-bottom: 5px;
+}
+
+/*.navbar-brand>img{*/
+    /*margin-top: -10px;*/
+    /*height: 45px;*/
+/*}*/
+
+.navbar-brand{
+    background-image: url('../img/lmtLogo.png');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    margin-top: 3px;
+    background-position: 0 0px;
+}
+
+nav .dropdown-menu{
+    background-color: #494949;
+    color: whitesmoke;
+}
+
+nav .dropdown-menu a:hover{
+    background-color: #494949;
+    color: #d7eff2;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: #494949;
+    color: #E7DFDD;
+}
+
+.last{
+    margin-right: 0;
+}
+
+.btn{
+    background-color: #373737;
+    color: #E7DFDD;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 1px solid #373737;
+}
+
+.btn:hover{
+    background-color: #E7DFDD;
+    color:#373737;
+    outline-color: #373737;
+}
+
+.btn:focus{
+    background-color: #E7DFDD;
+    color:#373737;
+}
+
+.btn:active{
+    background-color: #E7DFDD;
+    color:#373737;
+}
+
+a{
+    /*color:#373737;*/
+    color: #373737;
+}
+
+a:hover{
+    color:#373737;
+    text-decoration:  none;
+}
+
+table th, td{
+    align: center;
+}
+
+#mice_table td{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 60px;
+}
+
+#colony_mice_table td{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 60px;
+}
+
+
+.panel{
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #bfbfbf;
+}
+
+.panel-body{
+    /*background-color: #daf2df !important;*/
+}
+
+.panel-heading{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 1px;
+    border-color: #bfbfbf;
+    /*background-color: #d7eff2 !important;*/
+    /*background-color: #e7f2e6 !important;*/
+    /*background-color: #8e8e8e !important;*/
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These styles override the primary styles.
+   ========================================================================== */
+
+
+@media (max-width: 992px) {
+    .quarter{
+        width: 49%;
+    }
+
+    .sixth{ width: 23.5%; }
+
+    .new_last { margin-right:0;
+        padding-right: 0 !important;}
+}
+
+@media (max-width: 768px) {
+    .half, .quarter{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .third-x2, .third{
+        width: 100%;
+    }
+}
+
+#mouse_comment_table{
+    text-align: left;
+}

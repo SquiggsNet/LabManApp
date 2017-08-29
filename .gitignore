@@ -1,0 +1,16 @@
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+composer.json
+composer.lock
+.env
+#blade.xml
+#Capstone.iml
+#misc.xml
+#modules.xml
+#php.xml
+#profiles_settings.xml
+#vcs.xml
+
